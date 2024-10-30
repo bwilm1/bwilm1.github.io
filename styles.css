@@ -1,0 +1,114 @@
+/* font-family: "Archivo", sans-serif; */
+/* font-family: "Red Hat Display", sans-serif; */
+
+
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.header-page {
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #f8f8f8;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* This ensures the header stays on top of other elements */
+    height: 5.5rem;
+}
+
+header h1 {
+    color: #333;
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 22rem;
+}
+
+header ul {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+header ul li {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+header li a {
+    float: right;
+    color: #333;
+    text-decoration-color: gold;
+}
+
+header li a:hover {
+    color: gold;
+    text-decoration-color: #333;
+}
+
+header img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 1.075rem;
+}
+
+header p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+span img {
+    animation: rotation 7s infinite linear;
+}
+
+#smiley-img:hover {
+    animation-play-state: paused;
+}
+
+
+/* media queries */
+
+@media (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* This will center text-based content */
+    }
+
+    main > * {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header ul {
+        margin-top: 1rem;
+        font-weight: 600;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        margin-bottom: 15rem;
+    }
+
+    header img {
+        width: 3.25rem;
+        height: 3.25rem;
+        margin-bottom: 0.8rem;
+    }
+}
