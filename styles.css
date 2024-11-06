@@ -77,6 +77,30 @@ span img {
     animation-play-state: paused;
 }
 
+/* contact page */
+
+.contact-link {
+    color: #333;
+    text-decoration-color: gold;
+}
+
+.contact-link:hover {
+    color: gold;
+    text-decoration-color: #333;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+}
+
+.flex-column li {
+    list-style-type: none;
+    font-size: 2rem;
+}
 
 /* media queries */
 
